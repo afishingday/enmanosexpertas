@@ -1,0 +1,21 @@
+{
+  "name": "enmanosexpertas-e2e-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Automatización E2E (Playwright) del flujo de creación de informes de En Manos Expertas.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test smoke",
+    "test:completo-19-fotos": "playwright test reporte-completo-19-fotos",
+    "test:completo-3-fotos": "playwright test reporte-completo-3-fotos",
+    "test:incompleto": "playwright test reporte-incompleto-3-fotos",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^16.4.5"
+  }
+}

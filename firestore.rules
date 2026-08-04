@@ -1,0 +1,79 @@
+rules_version = '2';
+// ============================================================
+//  EN MANOS EXPERTAS — Reglas de seguridad de Firestore
+//  Pegar en: Firebase Console > Firestore Database > Reglas > Publicar
+// ============================================================
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---- funciones auxiliares ----
+    function signedIn() {
+      return request.auth != null;
+    }
+    // lee el rol del usuario desde su documento en /usuarios/{uid}
+    function rol() {
+      return get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol;
+    }
+    function esAdmin() {
+      return signedIn() && rol() == 'admin';
+    }
+
+    // ---- usuarios (perfil + rol) ----
+    match /usuarios/{uid} {
+      // cada quien lee su propio perfil; el admin lee todos
+      allow read: if signedIn() && (request.auth.uid == uid || esAdmin());
+      // el propio usuario (bootstrap) o el admin creando cuentas
+      allow create: if signedIn() && (
+        (request.auth.uid == uid && request.resource.data.rol == 'colaborador')
+        || esAdmin()
+      );
+      // solo el admin cambia roles / gestiona perfiles
+      allow update, delete: if esAdmin();
+    }
+
+    // ---- usernames (mapeo username → email para login)
+    // get público (sin list) para resolver el email antes de autenticarse
+    match /usernames/{username} {
+      allow get: if true;
+      allow list: if false;
+      allow create: if signedIn()
+                    && request.resource.data.keys().hasAll(['email', 'uid'])
+                    && (request.resource.data.uid == request.auth.uid || esAdmin());
+      allow update, delete: if esAdmin();
+    }
+
+    // ---- clientes (copropiedades): todos leen, solo admin escribe ----
+    match /clientes/{id} {
+      allow read: if signedIn();
+      allow write: if esAdmin();
+    }
+
+    // ---- empleados: todos leen, solo admin escribe ----
+    match /empleados/{id} {
+      allow read: if signedIn();
+      allow write: if esAdmin();
+    }
+
+    // ---- catálogo (zonas y conceptos): todos leen, solo admin escribe ----
+    match /catalogo/{id} {
+      allow read: if signedIn();
+      allow write: if esAdmin();
+    }
+
+    // ---- configuración (p. ej. escala de calificación 1-5): todos leen, solo admin escribe ----
+    match /configuracion/{id} {
+      allow read: if signedIn();
+      allow write: if esAdmin();
+    }
+
+    // ---- informes (el historial) ----
+    match /informes/{id} {
+      // el colaborador ve los suyos; el admin ve todos
+      allow read: if signedIn() && (resource.data.colaborador_id == request.auth.uid || esAdmin());
+      // al crear, el colaborador debe quedar como autor
+      allow create: if signedIn() && request.resource.data.colaborador_id == request.auth.uid;
+      // editar/borrar: el autor o el admin
+      allow update, delete: if signedIn() && (resource.data.colaborador_id == request.auth.uid || esAdmin());
+    }
+  }
+}

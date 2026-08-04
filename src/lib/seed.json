@@ -1,0 +1,941 @@
+{
+ "clientes": [
+  {
+   "nombre": "Los conquistadores",
+   "nit": "890917192",
+   "direccion": "Calle 33A # 63A - 30",
+   "administrador": "Adalberto Herrera",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "URBANIZACION VILLAS DE ENSUEÑO ETAPA II PH",
+   "nit": "900946115-3",
+   "direccion": "",
+   "administrador": "AMPARO RENDON",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "UNION FORTALEZA SAS",
+   "nit": "900822468-5",
+   "direccion": "",
+   "administrador": "CRISTIAN ALZATE",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "UNIDAD RESIDENCIAL SORRENTO II",
+   "nit": "890934463-4",
+   "direccion": "",
+   "administrador": "VICTOR HUGO ALVAREZ S",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "SOCIEDAD TELEVISION DE ANTIOQUIA LIMITADA",
+   "nit": "890937233-0",
+   "direccion": "",
+   "administrador": "WALTER PINEDA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "HACIENDA EL CASTILLO PH",
+   "nit": "811015311-3",
+   "direccion": "",
+   "administrador": "LEIDY TATIANA MARTINEZ M",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO ZUÑIGA SEÑORIAL PH",
+   "nit": "900603142-0",
+   "direccion": "",
+   "administrador": "VICTOR HUGO ALVAREZ S",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO VALDEMORO PH",
+   "nit": "800116392-3",
+   "direccion": "",
+   "administrador": "CATALINA CONTRERAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO TRANSVERSAL PH",
+   "nit": "890937445-5",
+   "direccion": "",
+   "administrador": "ADOLFO LEON MAZO Z",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO TORREVEDRA PH",
+   "nit": "890941520-5",
+   "direccion": "",
+   "administrador": "",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO TORREON REAL PH",
+   "nit": "800216435-0",
+   "direccion": "",
+   "administrador": "CATALINA CONTRERAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO TORREON DE LA BOLIVARIANA PH",
+   "nit": "811044495-3",
+   "direccion": "",
+   "administrador": "CATALINA CONTRERAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO SANTORINNI PH",
+   "nit": "811003130-5",
+   "direccion": "",
+   "administrador": "ALEJANDRO ALVARADO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO RESIDENCIAL TORRE LAUREL PH",
+   "nit": "901572318-9",
+   "direccion": "calle 37 # 78-53",
+   "administrador": "CAROLINA FORERO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO RESIDENCIAL MIRADOR DE NORMANDIA PH",
+   "nit": "900615119-2",
+   "direccion": "",
+   "administrador": "CATALINA CONTRERAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO QUINTERO PH",
+   "nit": "901538380-2",
+   "direccion": "",
+   "administrador": "LINA M VELASQUEZ",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO PORTON DE LA CASTELLANA PH",
+   "nit": "811034780-5",
+   "direccion": "",
+   "administrador": "LUZ DARY VARGAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO PALMA REAL PH",
+   "nit": "800160041-1",
+   "direccion": "",
+   "administrador": "MARTHA MEJIA CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO NOGAL 3 PH",
+   "nit": "890923018-2",
+   "direccion": "",
+   "administrador": "MARTHA ELVIRA ARANGO T",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO MULTIFAMILIAR SAN REMO PH",
+   "nit": "901305158-3",
+   "direccion": "",
+   "administrador": "JUAN CARLOS FLOREZ P",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO JARDINES DE NIZA PH",
+   "nit": "900980365-1",
+   "direccion": "",
+   "administrador": "MARTHA MEJIA CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO HABITAT PH",
+   "nit": "901099228-6",
+   "direccion": "",
+   "administrador": "ADALBERTO HERRERA LOPEZ",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO GIRASOLES DE LA FLORESTA PH",
+   "nit": "811043252-6",
+   "direccion": "",
+   "administrador": "MARTHA CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO EL PERGAMINO PH",
+   "nit": "811000462-1",
+   "direccion": "",
+   "administrador": "MARTHA MEJIA CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO CUARTAS PH",
+   "nit": "901296484-1",
+   "direccion": "",
+   "administrador": "CATALINA CONTRERAS",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO CORDOBA PH",
+   "nit": "800002246-6",
+   "direccion": "",
+   "administrador": "MARTHA MEJIA CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO CIMARRON PH",
+   "nit": "900892328-1",
+   "direccion": "",
+   "administrador": "YULY JUVINAO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO CENTRO PROFESIONAL CONQUISTADORES PH",
+   "nit": "811002642-1",
+   "direccion": "",
+   "administrador": "VICTOR HUGO ALVAREZ S",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO BULEVAR DE BULERIAS PH",
+   "nit": "800240955-1",
+   "direccion": "",
+   "administrador": "ALEJANDRO ALVARADO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO BOLIVIA PH",
+   "nit": "800173971-0",
+   "direccion": "",
+   "administrador": "BLANCA RESTREPO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO ALTOS DE SAN PATRICIO PH",
+   "nit": "811035199-1",
+   "direccion": "",
+   "administrador": "LUIS ALFONZO RESTREPO R",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONJUNTO RESIDENCIAL NUEVO AMANECER PH",
+   "nit": "900896570-6",
+   "direccion": "",
+   "administrador": "JUAN CARLOS FLOREZ P",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONJUNTO RESIDENCIAL EL TINAJERO PH",
+   "nit": "80099333-4",
+   "direccion": "",
+   "administrador": "VICTOR HUGO ALVAREZ S",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONJUNTO RESIDENCIAL BOSQUES DE LA CONCHA PH",
+   "nit": "890930297-1",
+   "direccion": "",
+   "administrador": "ALEJANDRO ALVARADO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONJUNTO INMOBILIARIO RESERVA DEL RIO PH",
+   "nit": "901052337-8",
+   "direccion": "",
+   "administrador": "",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONDOMINIO 1 DE LA URBANIZACION LA PILARICA PH",
+   "nit": "800129204-3",
+   "direccion": "",
+   "administrador": "CLAUDIA VELASQUEZ A",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "URBANIZACIÓN JARDIN DE SAUSALITO",
+   "nit": "",
+   "direccion": "",
+   "administrador": "ALEJANDRO ALVARADO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO RINCONES DE SAN DIEGO",
+   "nit": "",
+   "direccion": "CALLE 30 # 43 - 17",
+   "administrador": "ALEJANDRO SADARRIAGA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO URUBAMBA PH",
+   "nit": "",
+   "direccion": "Cra 46 #38-62",
+   "administrador": "MÓNICA DELGADO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO VITTA PH",
+   "nit": "",
+   "direccion": "calle 32e #78-57",
+   "administrador": "ELISABETH VILLAR CARDONA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO PORTALEGRE PH",
+   "nit": "900216064-4",
+   "direccion": "calle 45F # 70A 79",
+   "administrador": "LUZ MILA CARDONA OSPINA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO RESIDENCIAL SAN MARINO",
+   "nit": "",
+   "direccion": "transversal 39a # 71-94",
+   "administrador": "WILSON SEA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO SAN REMO PH",
+   "nit": "",
+   "direccion": "calle 38 # 52 13 (Bello)",
+   "administrador": "JUAN CARLOS FLORES",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO BUCHAREST PH",
+   "nit": "",
+   "direccion": "circular 2 # 74 -46",
+   "administrador": "LUZ MILA CARDONA OSPINA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "URBANIZACIÓN SERRANÍA DE SAN DIEGO",
+   "nit": "",
+   "direccion": "Cra 33 # 28 - 10",
+   "administrador": "CAROLINA FORERO",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "EDIFICIO SANTANA DE LOS CABALLEROS",
+   "nit": "",
+   "direccion": "TV 74 # 2 - 15",
+   "administrador": "LUZ MILA CARDONA OSPINA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "URBANIZACIÓN TIERRA GRATA CAMINO VERDE",
+   "nit": "",
+   "direccion": "Envigado",
+   "administrador": "JEISON HERRERA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "CONJUNTO RESIDENCIAL VIVERDI PH",
+   "nit": "901851175-5",
+   "direccion": "cr85a#39c48",
+   "administrador": "FERNANDO REYES",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "TORRE NOVA",
+   "nit": "901117875-1",
+   "direccion": "cra 19#19-56",
+   "administrador": "JHON MEJÍA",
+   "email_administrador": "",
+   "activo": true
+  },
+  {
+   "nombre": "RODANO",
+   "nit": "8909218229",
+   "direccion": "calle 53#50-20",
+   "administrador": "HARRISON URREGO",
+   "email_administrador": "",
+   "activo": true
+  }
+ ],
+ "empleados": [
+  {
+   "cedula": "98602811",
+   "nombre": "Andres Felipe Palacio Herrera",
+   "eps": "Nueva EPS",
+   "arl": "Colmena",
+   "activo": true
+  },
+  {
+   "cedula": "8163831",
+   "nombre": "Fabian Velasquez Herrea",
+   "eps": "Sura",
+   "arl": "Bolivar",
+   "activo": true
+  },
+  {
+   "cedula": "1037583218",
+   "nombre": "JONATAN ALEXANDER MONSALVE ARIAS",
+   "eps": "nueva eps",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1128482678",
+   "nombre": "EZEQUIEL   ESPINOSA CARVAJAL",
+   "eps": "savia salud",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1001618254",
+   "nombre": "MARINELLA   FLOREZ GARCES",
+   "eps": "nueva eps",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1022094596",
+   "nombre": "JOSE RENE ALCARAZ GONZALEZ",
+   "eps": "coosalud",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1128468047",
+   "nombre": "IVAN DARIO ARDILA URIBE",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "3514060",
+   "nombre": "ALIRIO DE JESUS RAMIREZ CUERVO",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "42682952",
+   "nombre": "EDITH MARJORIE DIOSA GUARIN",
+   "eps": "salud total",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "42686534",
+   "nombre": "LILIANA MARIA GALINDO RUIZ",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "42825161",
+   "nombre": "MARIA JANETH VELASQUEZ CASTAÑEDA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43042826",
+   "nombre": "MARIA EUGENIA SERNA GAVIRIA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43478964",
+   "nombre": "CLEMENCIA   AGUIRRE SANMARTIN",
+   "eps": "savia salud",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43587644",
+   "nombre": "BEATRIZ ELENA MORENO CAÑOLA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43975837",
+   "nombre": "VIVIANA MARIA GOMEZ MURILLO",
+   "eps": "nueva eps",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71184148",
+   "nombre": "JUAN BAUTISTA MURIEL SEGURA",
+   "eps": "nueva eps",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71707447",
+   "nombre": "GUSTAVO ADOLFO ARBELAEZ BERNAL",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71778612",
+   "nombre": "JAIME HUMBERTO MEJIA LONDOÑO",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "98495988",
+   "nombre": "LUIS CARLOS PAVAS CASTRO",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1679412",
+   "nombre": "JHONAN   SANCHEZ FAGIOLI",
+   "eps": "salud total",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43518045",
+   "nombre": "MARTHA IDOLIA CASTAÑO HENAO",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "64869218",
+   "nombre": "LEDYS DELCARMEN BRAVO ORTEGA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1129494281",
+   "nombre": "CARLOS MARIO LUNA MEJIA",
+   "eps": "",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "11936472",
+   "nombre": "MIGUEL   RENTERIA IBARGUEN",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "21979457",
+   "nombre": "BEATRIZ ELENA CANO VARELA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "32240728",
+   "nombre": "LINA MARCELA VELASQUEZ HERRERA",
+   "eps": "",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "32522306",
+   "nombre": "SOR MARIA GALLEGO QUINTANA",
+   "eps": "nueva eps",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "40332186",
+   "nombre": "LEIDY MARYORY MONA PULGARIN",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43514812",
+   "nombre": "FABIOLA  LOPEZ LOPEZ",
+   "eps": "salud total",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43632260",
+   "nombre": "HELEN ASTRID ECHEVERRY PUERTA",
+   "eps": "salud total",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43641209",
+   "nombre": "MARIA ELENA MUÑOZ GARCIA",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1432125",
+   "nombre": "GUILLERMO LENIN PALLARES DIAZ",
+   "eps": "savia salud",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1428058",
+   "nombre": "CHARLIE ABRAHAM BENITEZ NAVAS",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1033486236",
+   "nombre": "SEBASTIAN   SEPULVEDA FLOREZ",
+   "eps": "",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "21461198",
+   "nombre": "EUCARIS DEL SOCORRO MESA MESA",
+   "eps": "savia salud",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71660342",
+   "nombre": "DAVID ALBERTO MONTOYA SÁNCHEZ",
+   "eps": "sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "9957127",
+   "nombre": "JHON FREDY ROJAS GÓMEZ",
+   "eps": "salud total",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43595675",
+   "nombre": "DORA CECILIA CORDOBA",
+   "eps": "salud total",
+   "arl": "positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1037667650",
+   "nombre": "MARIA JOSÉ CAICEDO GALLEGO",
+   "eps": "Nueva EPS",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71386382",
+   "nombre": "GABRIEL JAIME BARAJAS CASTRILLÓN",
+   "eps": "Sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71763149",
+   "nombre": "ADALBERTO HERRERA LÓPEZ",
+   "eps": "Nueva EPS",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "43168991",
+   "nombre": "ANDREA PATRICIA ZAPATA LONDOÑO",
+   "eps": "Sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1040730020",
+   "nombre": "YULIANA ANDREA GARCIA GONZALEZ",
+   "eps": "Sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71371700",
+   "nombre": "OSCAR HERNEY AGUDELO GALLEGO",
+   "eps": "Sura",
+   "arl": "positiva",
+   "activo": true
+  },
+  {
+   "cedula": "1193147523",
+   "nombre": "ANA SOFIA MEDINA BEDOYA",
+   "eps": "Sura",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "3367314",
+   "nombre": "OSCAR URREGO",
+   "eps": "Nueva EPS",
+   "arl": "Positiva",
+   "activo": true
+  },
+  {
+   "cedula": "71934573",
+   "nombre": "GABRIEL MUÑÓZ",
+   "eps": "Sura",
+   "arl": "Positiva",
+   "activo": true
+  }
+ ],
+ "catalogo": [
+  {
+   "tipo": "zona",
+   "nombre": "Pisos",
+   "orden": 0,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Paredes",
+   "orden": 1,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Piscina",
+   "orden": 2,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Baños",
+   "orden": 3,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Gimnasio",
+   "orden": 4,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Zonas Húmedas",
+   "orden": 5,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Portería",
+   "orden": 6,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Exteriores",
+   "orden": 7,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Gabinetes RCI",
+   "orden": 8,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Vidrios",
+   "orden": 9,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Jardines",
+   "orden": 10,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Bodega Insumos",
+   "orden": 11,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Vestier",
+   "orden": 12,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Ascensores",
+   "orden": 13,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Parqueadero",
+   "orden": 14,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Shut Basuras",
+   "orden": 15,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Oficina",
+   "orden": 16,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Puntos fijos",
+   "orden": 17,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Cocineta",
+   "orden": 18,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Escaleras",
+   "orden": 19,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Pasamanos",
+   "orden": 20,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Salón social",
+   "orden": 21,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Zonas comunes",
+   "orden": 22,
+   "activo": true
+  },
+  {
+   "tipo": "zona",
+   "nombre": "Pocetas",
+   "orden": 23,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Conducta",
+   "orden": 0,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Rendimiento",
+   "orden": 1,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Presentación personal",
+   "orden": 2,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Uso EPP",
+   "orden": 3,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Puntualidad",
+   "orden": 4,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Posturas",
+   "orden": 5,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Colaboración",
+   "orden": 6,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Procedimientos",
+   "orden": 7,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Comunicación",
+   "orden": 8,
+   "activo": true
+  },
+  {
+   "tipo": "concepto",
+   "nombre": "Brigada de aseo",
+   "orden": 9,
+   "activo": true
+  }
+ ]
+}
