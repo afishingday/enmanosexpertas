@@ -65,6 +65,7 @@ a{color:#a16207}
 /* forms */
 label{display:block;font-size:12.5px;font-weight:600;color:#52525b;margin:0 0 4px}
 input,select,textarea{width:100%;padding:10px 11px;border:1px solid var(--gris2);border-radius:9px;font-size:14px;font-family:inherit;background:#fff}
+.zn[readonly]{background:transparent;border-color:transparent;padding-left:0;font-weight:600;color:var(--negro);cursor:default}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--amarillo);border-color:var(--amarillo)}
 textarea{min-height:90px;resize:vertical}
 .grid{display:grid;gap:12px}
@@ -107,7 +108,11 @@ textarea{min-height:90px;resize:vertical}
 /* acciones */
 .acciones{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--gris2);padding:12px 16px;display:flex;gap:10px;justify-content:flex-end;align-items:center;box-shadow:0 -2px 12px rgba(0,0,0,.08)}
 .acciones .msg{margin-right:auto;font-size:13px;color:#52525b}
-@media(max-width:600px){.acciones .btn{flex:1}}
+@media(max-width:600px){
+  .acciones{flex-direction:column-reverse;align-items:stretch}
+  .acciones .msg{margin-right:0;text-align:center}
+  .acciones .btn{width:100%;padding:13px 16px;font-size:15px}
+}
 
 /* tabs / listas */
 .tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}

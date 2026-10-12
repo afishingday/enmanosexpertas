@@ -10,7 +10,9 @@ import { IconTrash } from './Icons'
 
 const AUTOGUARDADO_MS = 800
 
-const nuevaFila = (nombre) => ({ nombre, revisado: 'SI', valor: '' })
+// origen: 'catalogo' = viene del catálogo (nombre fijo, no editable en el reporte)
+//         'manual'   = fila agregada al vuelo por el admin (nombre editable solo por admin)
+const nuevaFila = (nombre, origen = 'catalogo') => ({ nombre, revisado: 'SI', valor: '', origen })
 const nuevaEvaluacion = (conceptosBase) => ({
   id: crypto.randomUUID(), colaboradorId: '', conceptos: conceptosBase.map(r => ({ ...r })),
 })
@@ -88,7 +90,7 @@ export default function ReporteForm() {
   const efL = useMemo(() => sumar(evaluaciones.flatMap(ev => ev.conceptos)), [evaluaciones])
 
   const setFila = (setter, i, campo, val) => setter(prev => prev.map((r, k) => k === i ? { ...r, [campo]: val } : r))
-  const addFila = (setter) => setter(prev => [...prev, nuevaFila('')])
+  const addFila = (setter) => setter(prev => [...prev, nuevaFila('', 'manual')])
 
   /* ---------- evaluaciones (uno o más colaboradores a evaluar) ---------- */
   const agregarColaborador = () => setEvaluaciones(prev => [...prev, nuevaEvaluacion(conceptosBase)])
@@ -99,7 +101,7 @@ export default function ReporteForm() {
     ev.id === id ? { ...ev, conceptos: ev.conceptos.map((r, k) => k === i ? { ...r, [campo]: val } : r) } : ev
   ))
   const agregarConceptoDeEval = (id) => setEvaluaciones(prev => prev.map(ev =>
-    ev.id === id ? { ...ev, conceptos: [...ev.conceptos, nuevaFila('')] } : ev
+    ev.id === id ? { ...ev, conceptos: [...ev.conceptos, nuevaFila('', 'manual')] } : ev
   ))
 
   /* ---------- fotos ---------- */
@@ -244,7 +246,7 @@ export default function ReporteForm() {
       </section>
 
       {/* Información general */}
-      <TablaCalif titulo="Información general — zonas" colLabel="Zona" filas={zonas} calif={calif}
+      <TablaCalif titulo="Información general — zonas" colLabel="Zona" filas={zonas} calif={calif} esAdmin={esAdmin}
         onCampo={(i, c, v) => setFila(setZonas, i, c, v)}
         onAdd={esAdmin ? () => addFila(setZonas) : null} />
 
@@ -271,7 +273,7 @@ export default function ReporteForm() {
               </div>
               {colab && <p className="muted">Cédula {colab.cedula || '—'} · EPS {colab.eps || '—'} · ARL {colab.arl || '—'}</p>}
             </section>
-            <TablaCalif titulo="Conceptos evaluados" colLabel="Concepto" filas={ev.conceptos} calif={calif}
+            <TablaCalif titulo="Conceptos evaluados" colLabel="Concepto" filas={ev.conceptos} calif={calif} esAdmin={esAdmin}
               onCampo={(i, c, v) => setConceptoDeEval(ev.id, i, c, v)}
               onAdd={esAdmin ? () => agregarConceptoDeEval(ev.id) : null} />
           </div>
@@ -337,7 +339,7 @@ export default function ReporteForm() {
   )
 }
 
-function TablaCalif({ titulo, colLabel = 'Nombre', filas, calif, onCampo, onAdd }) {
+function TablaCalif({ titulo, colLabel = 'Nombre', filas, calif, esAdmin, onCampo, onAdd }) {
   return (
     <section className="card">
       <h2>{titulo}</h2>
@@ -345,18 +347,24 @@ function TablaCalif({ titulo, colLabel = 'Nombre', filas, calif, onCampo, onAdd 
         <div className="zrow-head">
           <span>{colLabel}</span><span>Revisado</span><span>Valor</span><span>Calificación</span>
         </div>
-        {filas.map((r, i) => (
-          <div className="zrow" key={i}>
-            <input className="zn" value={r.nombre} placeholder="Nombre" onChange={e => onCampo(i, 'nombre', e.target.value)} />
-            <select className="rev" value={r.revisado} onChange={e => onCampo(i, 'revisado', e.target.value)}>
-              <option value="SI">Sí</option><option value="NO">No</option>
-            </select>
-            <select className="val" value={r.valor} disabled={r.revisado === 'NO'} onChange={e => onCampo(i, 'valor', e.target.value)}>
-              <option value="">–</option>{[5,4,3,2,1].map(v => <option key={v} value={v}>{v}</option>)}
-            </select>
-            <div className="cal">{r.revisado === 'NO' ? 'No revisado' : (r.valor ? calif[r.valor] : '–')}</div>
-          </div>
-        ))}
+        {filas.map((r, i) => {
+          // el nombre viene del catálogo y no debe editarse desde el reporte; solo
+          // las filas agregadas al vuelo por el admin ('manual') aceptan escribirlo.
+          const nombreEditable = esAdmin && r.origen === 'manual'
+          return (
+            <div className="zrow" key={i}>
+              <input className="zn" value={r.nombre} placeholder="Nombre" readOnly={!nombreEditable}
+                onChange={e => onCampo(i, 'nombre', e.target.value)} />
+              <select className="rev" value={r.revisado} onChange={e => onCampo(i, 'revisado', e.target.value)}>
+                <option value="SI">Sí</option><option value="NO">No</option>
+              </select>
+              <select className="val" value={r.valor} disabled={r.revisado === 'NO'} onChange={e => onCampo(i, 'valor', e.target.value)}>
+                <option value="">–</option>{[5,4,3,2,1].map(v => <option key={v} value={v}>{v}</option>)}
+              </select>
+              <div className="cal">{r.revisado === 'NO' ? 'No revisado' : (r.valor ? calif[r.valor] : '–')}</div>
+            </div>
+          )
+        })}
       </div>
       {onAdd && <button className="addbtn" onClick={onAdd}>+ Agregar</button>}
     </section>
